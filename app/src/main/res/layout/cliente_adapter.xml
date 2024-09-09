@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewClienteAdapter1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/amber_50"
+        android:layout_marginTop="20dp"
+        android:paddingStart="5dp"
+        />
+    <TextView
+        android:id="@+id/textViewClienteAdapter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewClienteAdapter1"
+        android:textColor="@color/amber_50"
+        android:layout_marginTop="20dp"
+        android:paddingStart="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewClienteAdapter3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewClienteAdapter2"
+        android:textColor="@color/amber_50"
+        android:layout_marginTop="20dp"
+        android:paddingStart="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewClienteAdapter4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewClienteAdapter3"
+        android:textColor="@color/amber_50"
+        android:layout_marginTop="20dp"
+        android:paddingStart="5dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDeletaCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/button_delete"
+        android:text="DELETAR"
+        android:textColor="@color/amber_50"
+        android:textStyle="bold"
+        android:layout_marginEnd="15dp"
+        />
+    <ImageView
+        android:id="@+id/iamgeViewBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?actionBarDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewClienteAdapter4"
+        android:layout_marginTop="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/textViewAPPname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/menuText"
+        android:textStyle="bold"
+        android:textColor="@color/amber_50"
+        android:textSize="24sp"
+        />
+    <ImageView
+        android:id="@+id/marketLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAPPname"
+        android:src="@drawable/market"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:id="@+id/btnCadastraCliente"
+        app:layout_constraintTop_toBottomOf="@id/marketLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCadastraProduto"
+        android:text="Cadastrar Cliente"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        style="@style/button"
+    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:id="@+id/btnCadastraProduto"
+        app:layout_constraintTop_toBottomOf="@id/marketLogo"
+        app:layout_constraintStart_toEndOf="@id/btnCadastraCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Cadastrar Produto"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        style="@style/button"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:id="@+id/bntRegistraCompra"
+        app:layout_constraintTop_toBottomOf="@id/btnCadastraCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Registrar Compra"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        style="@style/button"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnListaProdutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="LISTA PRODUTOS"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bntRegistraCompra"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnListaClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="LISTA CLIENTES"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnListaProdutos"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnListaCompras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="LISTA Compras"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnListaClientes"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

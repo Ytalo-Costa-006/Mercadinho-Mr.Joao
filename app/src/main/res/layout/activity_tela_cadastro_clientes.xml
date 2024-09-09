@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tela_cadastro_clientes"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/tvTelaCadastroCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Clientes"
+        android:textStyle="bold"
+        android:textColor="@color/amber_50"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/marketLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTelaCadastroCliente"
+        android:src="@drawable/market"
+        />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome Cliente:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toStartOf="@id/edtRua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/marketLogo"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/edtRua"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/logadouro"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edtNome"
+        app:layout_constraintTop_toBottomOf="@id/marketLogo"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/edtNumeroRua"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="Numero:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toStartOf="@id/edtCidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNome" />
+
+    <EditText
+        android:id="@+id/edtCidade"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="Cidade:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edtNumeroRua"
+        app:layout_constraintTop_toBottomOf="@id/edtRua"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <EditText
+        android:id="@+id/edtCep"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="CEP:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toStartOf="@id/edtEstado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNumeroRua" />
+
+    <EditText
+        android:id="@+id/edtEstado"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="Estado:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edtCep"
+        app:layout_constraintTop_toBottomOf="@id/edtNumeroRua" />
+
+    <EditText
+        android:id="@+id/edtCPF"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="CPF:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toStartOf="@id/edtTelefone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtCep" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Telefone:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edtCPF"
+        app:layout_constraintTop_toBottomOf="@id/edtEstado" />
+
+    <EditText
+        android:id="@+id/edtDiaVencimento"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="Data de Vencimento:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toStartOf="@id/edtComplemento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtCPF" />
+
+    <EditText
+        android:id="@+id/edtComplemento"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="Complemento:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edtDiaVencimento"
+        app:layout_constraintTop_toBottomOf="@id/edtTelefone" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="Email:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toStartOf="@id/edtBairro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtDiaVencimento" />
+
+    <EditText
+        android:id="@+id/edtBairro"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="Bairro:"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@id/edtComplemento" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastraCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastra"
+        style="@style/button"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        style="@style/button"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        app:layout_constraintStart_toEndOf="@id/btnCadastraCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
