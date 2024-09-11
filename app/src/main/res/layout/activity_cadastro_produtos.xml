@@ -28,49 +28,72 @@
         android:textStyle="bold"
         android:textSize="24sp"
         />
+
+    <EditText
+        android:id="@+id/edtIdProduto"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:hint="ID:"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUnidade" />
+    <TextView
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/search"
+        android:padding="11dp"
+        app:layout_constraintStart_toEndOf="@id/edtIdProduto"
+        app:layout_constraintTop_toBottomOf="@id/edtUnidade"
+        />
+
     <EditText
         android:id="@+id/edtDescricao"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/edtPreco"
-        app:layout_constraintTop_toBottomOf="@id/tvCadastroProduto"
-        android:hint="Descrição Produto"
-        android:textColorHint="@color/gray_400"
-        android:inputType="text"
         android:layout_marginTop="50dp"
+        android:hint="Descrição Produto"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toStartOf="@id/edtPreco"
+        app:layout_constraintStart_toStartOf="parent"
 
-        />
+        app:layout_constraintTop_toBottomOf="@id/tvCadastroProduto" />
+
     <EditText
         android:id="@+id/edtPreco"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/edtDescricao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvCadastroProduto"
-        android:hint="Preço Produto"
-        android:textColorHint="@color/gray_400"
-        android:inputType="numberDecimal"
         android:layout_marginTop="50dp"
-        />
+        android:hint="Preço Produto"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edtDescricao"
+        app:layout_constraintTop_toBottomOf="@id/tvCadastroProduto" />
+
     <EditText
         android:id="@+id/edtUnidade"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtDescricao"
         android:hint="Unidade"
-        android:textColorHint="@color/gray_400"
         android:inputType="text"
-        />
+        android:minHeight="48dp"
+        android:textColorHint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtDescricao" />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCadastra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/edtUnidade"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btnMenu"
+        app:layout_constraintEnd_toStartOf="@id/btnAtualizar"
         app:layout_constraintBottom_toBottomOf="parent"
         style="@style/button"
         android:text="Cadastrar"
@@ -81,12 +104,25 @@
         android:id="@+id/btnMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnAtualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/button"
+        android:text="MENU"
+        android:padding="8dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAtualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/edtUnidade"
         app:layout_constraintStart_toEndOf="@id/btnCadastra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         style="@style/button"
-        android:text="MENU"
+        android:text="Atualizar"
         android:padding="8dp"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

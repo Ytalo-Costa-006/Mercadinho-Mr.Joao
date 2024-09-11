@@ -91,7 +91,9 @@ public class cadastro_de_compras extends AppCompatActivity {
 
     public void InserirCompra(){
         ContentValues registro = new ContentValues();
+
         registro.put("dataCompra", edtData.getText().toString());
+        Date dttmp = new Date();
         registro.put("valorCompra",valorTotalAcumulado);
         db.insert("compras",null, registro);
 

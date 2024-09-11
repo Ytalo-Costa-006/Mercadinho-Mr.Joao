@@ -27,19 +27,7 @@
         <activity
             android:name=".cadastro_de_compras"
             android:exported="false" />
-        <activity
-            android:name=".registro_compras"
-            android:exported="false" />
-        <activity
-            android:name=".regista_compras"
-            android:exported="false"
-            android:theme="@style/Theme.MercadinoMrJoao" />
-        <activity
-            android:name=".Registrar_Compra"
-            android:exported="false" />
-        <activity
-            android:name=".cadastrar_produto"
-            android:exported="false" />
+
         <activity
             android:name=".tela_cadastro_clientes"
             android:exported="false" />
